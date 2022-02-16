@@ -1,0 +1,34 @@
+{  
+  lpad: (str, size, fill = ' ') => (str == null ? fill.repeat(size) : (size > str.length ? fill.repeat(size - str.length) + str : str.substr(0,size)))
+, rpad: (str, size, fill = ' ') => (str == null ? fill.repeat(size) : (size > str.length ? str + fill.repeat(size - str.length) : str.substr(0,size)))
+
+, dataExtension : (x) => typeof x.profile == "array" ? { "outputDoc" : x.profile.map(cur=> { "outId" : cur.id } ) } : { "outputDoc" : { "outId" : x.profile.id } }
+
+, objectToKeyValuePairs : (obj, kvSep=':', dvSep=',', encode=false) => obj.entries().sort((a,b)=> a[0] < b[0]).map(x => x[0] + kvSep + (encode ? encodeURIComponent(x[1]) : x[1])).join(dvSep)
+, keyValuePairsToObject : (str, kvSep=':', dvSep=',', decode=false) => str.split(dvSep).toObject((x,y)=> x.split(kvSep)[0], (x,y)=>decodeURIComponent(x.split(kvSep)[1]))
+
+, flattenObject : (obj, subObjName) => obj.extend(obj.get(subObjName)).filter((value, key) => key != subObjName)
+
+, numberWithCommas : (num, precision=0) => num.toString().split(".")[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",")          /* whole number formatting - add commas */
+                                        + (precision > 0 ? "." + num.toFixed(precision).toString().split(".")[1] : "") /* fractional formatting - precision */
+, bytesToFileSize: (bytes, precision=2) =>
+    match bytes {
+          bytes if bytes < Math.pow(1024,1) => bytes + " bytes"    
+        , bytes if bytes < Math.pow(1024,2) => (bytes / Math.pow(1024,1)).toFixed(precision) + " KB"    
+        , bytes if bytes < Math.pow(1024,3) => (bytes / Math.pow(1024,2)).toFixed(precision) + " MB"    
+        , bytes if bytes < Math.pow(1024,4) => (bytes / Math.pow(1024,3)).toFixed(precision) + " GB"    
+        , bytes if bytes < Math.pow(1024,5) => (bytes / Math.pow(1024,4)).toFixed(precision) + " TB"    
+        , bytes if bytes < Math.pow(1024,6) => (bytes / Math.pow(1024,5)).toFixed(precision) + " PB"    
+        , bytes if bytes < Math.pow(1024,7) => (bytes / Math.pow(1024,6)).toFixed(precision) + " EB"    
+        , bytes if bytes < Math.pow(1024,8) => (bytes / Math.pow(1024,7)).toFixed(precision) + " ZB"    
+        , _                                 => (bytes / Math.pow(1024,8)).toFixed(precision) + " YB"    
+        }
+
+,  secondsToElapsed: (seconds) =>
+    match seconds {
+	      seconds if seconds < (60)           => seconds + " seconds"
+		, seconds if seconds < (60 * 60)      => Math.round(seconds / 60, 1) + " minutes"
+		, seconds if seconds < (60 * 60 * 24) => Math.round(seconds / 60 / 60, 1) + " hours"
+		, _									  => Math.round(seconds / 60 / 60 / 24, 1) + " days"
+		}
+}
