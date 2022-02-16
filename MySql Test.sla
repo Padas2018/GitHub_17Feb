@@ -1,0 +1,135 @@
+{
+    "class_id": "com-snaplogic-snap-api-sql-accounts-mysqldynamicaccount",
+    "class_version": 1,
+    "migration_metadata": {
+        "source_org": "SnapLogic-PS-Team"
+    },
+    "property_map": {
+        "info": {
+            "label": {
+                "value": "MySql Test"
+            },
+            "notes": {}
+        },
+        "settings": {
+            "JdbcDriversProp": {
+                "value": []
+            },
+            "advancedProperties": {
+                "value": {
+                    "acquireIncrement": {
+                        "value": 1
+                    },
+                    "autoCommit": {
+                        "value": true
+                    },
+                    "batchSize": {
+                        "value": 50
+                    },
+                    "checkoutTimeout": {
+                        "value": 10000
+                    },
+                    "fetchSize": {
+                        "value": 100
+                    },
+                    "idleConnectionTestPeriod": {
+                        "value": 5
+                    },
+                    "maxIdleTime": {
+                        "value": 30
+                    },
+                    "maxPoolSize": {
+                        "value": 50
+                    },
+                    "minPoolSize": {
+                        "value": 0
+                    },
+                    "retryAttempts": {
+                        "value": 0
+                    },
+                    "urlProperties": {
+                        "value": []
+                    }
+                }
+            },
+            "connectionProperties": {
+                "value": {
+                    "AuthenticationMode": {
+                        "value": "Password"
+                    },
+                    "PassPhrase": {
+                        "expression": false,
+                        "fp": "9207eb494545fc4f2dc7c4c82154a174471ac326432005090fb071e53e4bdba6",
+                        "key": "account-cloud-managed-5a7406fabc9ffa1d0bfa7781-2018-02-02T06:36:54-365964+00:00",
+                        "sym_iv": "F+R6VdmmABsKSs/ZSQlllQ==",
+                        "sym_key": "GmORWD1+uSiXvezwNNO+th9HzwKLJSC2fhE5mQSzasyXRGu38y7WhXiy6MkvGte+VdqS7LTHzbt2Xjb8tmHoSyZXM3W6OHjdoAncWpX7VYIlGS2vmts5zPGEREQGQlvpinMzF7eycnxzRVT/LKRkWzeIv4bAdBweuwnH94MH+iIYeyarrP2zX2Efu3LUaaabiOdl6dHy8EE1dkz7w6r2GroGXFBXX+Y9tpF8dY0eOH6QpIxMt5j8jNe9immORDBAbOg0VHLOEuzcj9v2D2BNLWRWePcccai4Jrpkywj3bBcbJ2Q9FfaFB61UBVSo/29jZFgZ/9Bu9CfY6pjWnCFf1Q==",
+                        "value": "LR+eqXFn5FhhcfNlpJr/MA=="
+                    },
+                    "databaseName": {
+                        "expression": false,
+                        "value": "aaa"
+                    },
+                    "hostname": {
+                        "expression": false,
+                        "value": "aaa"
+                    },
+                    "keyAlias": {
+                        "expression": false,
+                        "value": ""
+                    },
+                    "keyStoreURL": {
+                        "expression": false
+                    },
+                    "keystorePassword": {
+                        "expression": false,
+                        "fp": "9207eb494545fc4f2dc7c4c82154a174471ac326432005090fb071e53e4bdba6",
+                        "key": "account-cloud-managed-5a7406fabc9ffa1d0bfa7781-2018-02-02T06:36:54-365964+00:00",
+                        "sym_iv": "nMlDSgIz657NL3FTrfb0SQ==",
+                        "sym_key": "VBVTr8bKJx4nLCgCSXbdB6OqHrbqHHNQbWc54L3MY7CL15ppThLHwBnI5fiL6VqxvKKVQCy3YuPI7ITo2pjqMEtwoCMFiFR6Oe6O6f+ZfzHRcOLKzoWxDwgyQNtqMia1HkA0BC9TwAR8j3nE+3KcW2j17HhvHjVOa665ZsZVA19lAa3sqHbkooqplAuCgXl8+ZLalxTjD05IGLublRxoTW23+z9u3kyD9rzaaOySt1cwMpiU+1MJdVzBX2EU12TvXem3/k5151Qdw+u9xEnXMQYsvIyMAwojNLd3cj3Irgz777eJ3n+edG2T7QSQnVW7jdaaqnar7/Zs25Jjsn8b9w==",
+                        "value": "9NQBlq5T1QFyS/wU5z2fkQ=="
+                    },
+                    "password": {
+                        "expression": false,
+                        "fp": "9207eb494545fc4f2dc7c4c82154a174471ac326432005090fb071e53e4bdba6",
+                        "key": "account-cloud-managed-5a7406fabc9ffa1d0bfa7781-2018-02-02T06:36:54-365964+00:00",
+                        "sym_iv": "+Vql8N/L/wGn3yh/YAP5UA==",
+                        "sym_key": "CS4/ED0ibh95oV7IzyMfk5NT7IoZwn5xnEZrI//F4TzgJp/pcljybzK6LndCv6B/PITVVbwk3aRK+SlUywnLKuaj0DfpBAm4er3xeXRjtm4FuzZAqvs5OZWOOlkzfGN1lQBoqnPoWIwZ+2QKLyBEyoYsVjSW0ZrhI7OgKTpuSV79eSirWYtyZJxwVA8g9ksczXJmRIoHqwXmYPD1GlLpXAl63+hI8liemITvtsgfIBKu2zJjjGEQpTlAZHKjPH6hjT1LoCBW5I2noCKtFaRwpZ1FZVfQ5heYKdAHyedwfDdlDUKSAzntb6VbEfxjMHHSzAb/+yTgIfLNzY53b6F2Fw==",
+                        "value": "pt0soSTCxd80UGAmIviYyQ=="
+                    },
+                    "portNumber": {
+                        "expression": false,
+                        "value": 3306
+                    },
+                    "sshTunnelConfiguration": {
+                        "expression": false,
+                        "value": false
+                    },
+                    "sshhostname": {
+                        "expression": false,
+                        "value": ""
+                    },
+                    "sshpassword": {
+                        "expression": false,
+                        "fp": "9207eb494545fc4f2dc7c4c82154a174471ac326432005090fb071e53e4bdba6",
+                        "key": "account-cloud-managed-5a7406fabc9ffa1d0bfa7781-2018-02-02T06:36:54-365964+00:00",
+                        "sym_iv": "RGkLfTWkoyZj+dGNJstLzg==",
+                        "sym_key": "REJSZIUJjkYbdoi2h1+iL2QsSoILVfahZ9vE5Y3OvQCzJNkvUNa58hxVQJthm9bXufCUjVfLhOkJ/c3ZMFVZ0DhmW4YQlHGFDsBUWzFFIr2VaHVH2Lygw9uM5GQVqtj5bEXEF6jRRy/0umD9ay7uCo2dlUdrYSuZ6M58msdfK+q6ULbXD9JMF0eLRmvd9yhLjL+1rvQa8ebmxssVdgVNZ5KRTvetJMO4Uj10i0TW2pWtUMxubUQC4Hh7kznBQYWO+L7aYHcWRs4lC1zT4DYQYYamsG60GS0ui+pMt5+pT0arj4lNKKrc1S2Sk3M01KsjPnbQ1srvnNKjgKvBnaVqTg==",
+                        "value": "s9N6lM6sUZ1v1iFrR25AQQ=="
+                    },
+                    "sshusername": {
+                        "expression": false,
+                        "value": ""
+                    },
+                    "username": {
+                        "expression": false,
+                        "value": "pdas@snaplogic.com"
+                    }
+                }
+            },
+            "jdbcDriverClass": {
+                "value": "com.mysql.jdbc.Driver"
+            }
+        },
+        "view_serial": 100
+    }
+}
