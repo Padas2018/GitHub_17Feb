@@ -1,0 +1,40 @@
+{
+    "class_id": "com-snaplogic-snaps-jms-sqsaccount",
+    "class_version": 1,
+    "migration_metadata": {
+        "source_org": "SnapLogic-PS-Team"
+    },
+    "property_map": {
+        "info": {
+            "label": {
+                "value": "Amazon SQS Account (Paromita Personal)"
+            },
+            "notes": {
+                "value": null
+            }
+        },
+        "settings": {
+            "AWSAccessKey": {
+                "fp": "9207eb494545fc4f2dc7c4c82154a174471ac326432005090fb071e53e4bdba6",
+                "key": "account-cloud-managed-5a7406fabc9ffa1d0bfa7781-2018-02-02T06:36:54-365964+00:00",
+                "sym_iv": "v+v45Ckq+9Zbs0keam3d5w==",
+                "sym_key": "lefmsTmY5UjPrqGQmAy8vU6f1TFWWrlM1ykOg+1sZFGIrloiduIbiFH5Mn6+sWNeCHCgVDtYTPgYD2HjbfOX2Um4sNGwpiPfqLIkJAxrEcwRDUhDbboe6kDq7V8DG6ORbGjaMVNWJoc3JXQS0L65Ba96Tqt3k2+pFG/CAsGe8L7G0DN/zNaSlU4xukVschdScKDdKul8TdPyJzy9v51Y4vp3Q62NCi6cbOblZru20MTzwq3oGvj9MhCuU5TtHJBkiDUS2JYYSEO5IBPUEEg+qucjGBCW3zGpmEwDx0tVc+jLDyBJufLGSTWEPUKtVEtsPCoXI82GBCcr3trj+nat1Q==",
+                "value": "ApvCHuYAZll8nnUZb0CZLwJ0pBgbfL1BaMIhaIN8UG4="
+            },
+            "AWSRegion": {
+                "value": "us-east-1"
+            },
+            "AWSSecretKey": {
+                "fp": "9207eb494545fc4f2dc7c4c82154a174471ac326432005090fb071e53e4bdba6",
+                "key": "account-cloud-managed-5a7406fabc9ffa1d0bfa7781-2018-02-02T06:36:54-365964+00:00",
+                "sym_iv": "3CspPn6HobYD8n0XRnO7ag==",
+                "sym_key": "cl4oj5mT0+xfuRVSNurQLuKa3lotPLUUUV0sZdsQNH1QKR8xVLxDDkV8ey8idzIQenUTKuGacfeJTrs2RE/PqnOLurofldyzCsK6VDhid7zcNH+0YJB6FJ5FuIeIFmWQFmV0M35Zm17HRIDbPqfGGeWIYp3c/iK90oBut29ID82Ffe5S1VFb63z7N6OK1uMr5NiLsj4aZSaQrga7R0QrBQ8avE/ZHXu8i0GXHxwGEk/4GHoEFCzbcMHfllLNBxYfhGebKznQZS3FI3qeRVKs2nQ/H3DPT1+qdBG9HDbx3eO2QR/1Dp4YujuJDXBTTnuch08SIh3IWcLdksCHvzd6Ag==",
+                "value": "6CyKUm25RXYhPt4DRetGa4rNlIIXtwKJS2h+fK1SwiaUt1o3DhmvYNmugVnTrlTn"
+            },
+            "EndPoint": {
+                "value": "https://sqs.us-east-2.amazonaws.com/780688056611/PDTestQueue"
+            }
+        },
+        "view_serial": 100
+    }
+}
